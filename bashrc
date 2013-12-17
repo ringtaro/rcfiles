@@ -3,7 +3,7 @@
 #
 
 # Some shortcuts for different directory listings
-if [ `hostname` == "macbook" ]
+if [[ `uname` == "Darwin" ]]
 then
   alias ls='ls -G'
 else
