@@ -21,6 +21,9 @@ alias mv='mv -i'
 alias df='df -h'
 alias du='du -h'
 
+# Terminal refresh
+alias tc='echo -e "\ec"'
+
 # Functions
 #
 # Some people use a different file for functions
