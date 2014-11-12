@@ -101,6 +101,15 @@ alias cd=cd_func
 
 
 #
+# Cygwin向けメモ
+#
+
+if [[ `uname` != "CYGWIN_NT-6.3" ]]
+then
+  echo "DOSコマンドを使うときは | iconv -f sjis をつけると文字化けしない"
+fi
+
+#
 # 非推奨になったネットワークコマンド養成ギプス
 #
 
