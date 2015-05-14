@@ -8,5 +8,5 @@ then
 fi
 if [ ! -e ~/.bashrc ]
 then
-  cp bashrc ~/.bashrc
+  cp bashrc.sh ~/.bashrc
 fi
