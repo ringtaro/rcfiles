@@ -24,8 +24,10 @@ alias du='du -h'
 # Terminal refresh
 alias tc='echo -e "\ec"'
 
+#
 # Functions
 #
+
 # Some people use a different file for functions
 # if [ -f "${HOME}/.bash_functions" ]; then
 #   source "${HOME}/.bash_functions"
@@ -99,6 +101,23 @@ cd_func ()
 
 alias cd=cd_func
 
+
+#
+# for Visual Studio Code
+#
+
+if [[ `uname` == "Darwin" ]]
+then
+  code () {
+      if [[ $# = 0 ]]
+      then
+          open -a "Visual Studio Code"
+      else
+          [[ $1 = /* ]] && F="$1" || F="$PWD/${1#./}"
+          open -a "Visual Studio Code" --args "$F"
+      fi
+  }
+fi
 
 #
 # Cygwin向けメモ
