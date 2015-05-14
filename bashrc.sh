@@ -132,7 +132,7 @@ fi
 # 非推奨になったネットワークコマンド養成ギプス
 #
 
-if [[ `uname` != "CYGWIN_NT-6.3" ]]
+if [[ `uname` == "Linux" ]]
 then
   net_tools_deprecated_message () {
     echo -n 'net-tools コマンドはもう非推奨ですよ？おじさんなんじゃないですか？ '
