@@ -1,6 +1,6 @@
 if [ -e ~/.bashrc ]
 then
-  DIFFRES=`diff bashrc ~/.bashrc`
+  DIFFRES=`diff bashrc.sh ~/.bashrc`
   if [ "$DIFFRES" != "" ]
   then
     mv ~/.bashrc ~/.bashrc.orig
